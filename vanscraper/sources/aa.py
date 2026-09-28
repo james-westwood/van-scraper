@@ -140,7 +140,7 @@ def parse_detail_page(html: str, url: str) -> Detail:
     mileage = _int_after(r"Mileage:\s*([\d,]+)", text)
     reg_m = re.search(r"Vehicle history check\s+For\s+([A-Z0-9]{5,8})\b", text)
     # UK numbers come as 01709 622 638, 0118 344 2202, 020 3018 4583 ...
-    dealer_m = re.search(r"Contact the dealer\s+(.{1,80}?)\s+0\d{2,4}\s?\d{3}\s?\d{3,4}\b", text)
+    dealer_m = re.search(r"Contact the dealer\s+(.{1,80}?)\s+0\d{2,4}\s?\d{3,4}\s?\d{3,4}\b", text)
     fuel_m = re.search(r"Fuel type:\s*([A-Za-z/ -]+?)\s+Transmission:", text)
     fuel_type = fuel_m.group(1).strip().lower() if fuel_m else None
     if fuel_type in ("n/a", ""):

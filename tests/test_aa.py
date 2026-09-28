@@ -71,3 +71,9 @@ def test_real_page_features_list_is_not_read_as_fuel():
     assert d.fuel_type == "diesel" and d.body_type == "dropside"
     assert "Electric Windows" not in (d.description or "")
     assert classify_title(d.classify_text()).rejected_reason == "diesel"
+
+
+def test_dealer_with_london_number():
+    html = "<h1>Van</h1><p>Contact the dealer Blackstone Motors Limited 020 3018 4583 * Get directions</p>"
+    assert aa.parse_detail_page(html, "https://www.theaa.com/used-vans/cardetails/6-3370584").dealer \
+        == "Blackstone Motors Limited"
