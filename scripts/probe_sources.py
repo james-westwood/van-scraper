@@ -1,7 +1,8 @@
 """Which candidate discovery sources may we use, and what do their pages look like?
 
 Run on GitHub Actions (the Claude sandbox can't reach these hosts):
-    uv run python scripts/probe_sources.py
+    uv run python -m scripts.probe_sources
+(run as a module so the repo root, and so vanscraper, is importable)
 For each URL: robots.txt verdict, HTTP status, and how many listing-like links
 the page contains. Use the output to decide which adapters to write next.
 Nothing disallowed is ever requested.

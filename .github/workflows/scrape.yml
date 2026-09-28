@@ -23,6 +23,11 @@ concurrency:
   group: van-scrape
   cancel-in-progress: false
 
+defaults:
+  run:
+    # Explicit bash gives -eo pipefail, so `| tee` can't mask a failure.
+    shell: bash
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -41,7 +46,7 @@ jobs:
 
       - name: Probe sources
         if: ${{ inputs.probe }}
-        run: uv run python scripts/probe_sources.py | tee -a "$GITHUB_STEP_SUMMARY"
+        run: uv run python -m scripts.probe_sources | tee -a "$GITHUB_STEP_SUMMARY"
 
       - name: Scrape
         if: ${{ !inputs.probe }}
