@@ -8,8 +8,8 @@ week". Better to fail loudly and visibly in run_metadata.
 
 from __future__ import annotations
 
+import re
 import time
-import urllib.robotparser
 from urllib.parse import urlsplit
 
 import httpx
@@ -26,6 +26,62 @@ class RobotsDisallowed(Exception):
         self.reason = reason
 
 
+class Robots:
+    """robots.txt rules per RFC 9309, including the `*` and `$` wildcards.
+
+    urllib.robotparser treats `*` literally, so AA's
+    `Disallow: /used-cars/displaycars*` silently allowed the search page.
+    """
+
+    def __init__(self, lines: list[str]):
+        # Groups of (agents, rules); consecutive User-agent lines share a group.
+        self._groups: list[tuple[list[str], list[tuple[bool, str]]]] = []
+        agents: list[str] = []
+        rules: list[tuple[bool, str]] = []
+        for raw in lines:
+            line = raw.split("#", 1)[0].strip()
+            if ":" not in line:
+                continue
+            key, val = (x.strip() for x in line.split(":", 1))
+            key = key.lower()
+            if key == "user-agent":
+                if rules:
+                    self._groups.append((agents, rules))
+                    agents, rules = [], []
+                agents.append(val.lower())
+            elif key in ("allow", "disallow") and agents:
+                if val:  # empty Disallow means allow everything
+                    rules.append((key == "allow", val))
+        if agents:
+            self._groups.append((agents, rules))
+
+    def _rules_for(self, user_agent: str) -> list[tuple[bool, str]]:
+        token = user_agent.split("/", 1)[0].strip().lower()
+        specific = [r for a, rs in self._groups if token in a for r in rs]
+        if any(token in a for a, _ in self._groups):
+            return specific
+        return [r for a, rs in self._groups if "*" in a for r in rs]
+
+    @staticmethod
+    def _matches(pattern: str, path: str) -> bool:
+        anchored = pattern.endswith("$")
+        body = pattern[:-1] if anchored else pattern
+        regex = ".*".join(re.escape(part) for part in body.split("*"))
+        return re.match(regex + ("$" if anchored else ""), path) is not None
+
+    def can_fetch(self, user_agent: str, url: str) -> bool:
+        parts = urlsplit(url)
+        path = (parts.path or "/") + (f"?{parts.query}" if parts.query else "")
+        best: tuple[int, bool] | None = None  # (pattern length, allow)
+        for allow, pattern in self._rules_for(user_agent):
+            if self._matches(pattern, path):
+                # Longest match wins; on a tie, Allow wins.
+                cand = (len(pattern), allow)
+                if best is None or cand > best:
+                    best = cand
+        return best is None or best[1]
+
+
 class PoliteClient:
     def __init__(self, client: httpx.Client | None = None):
         self.client = client or httpx.Client(
@@ -33,29 +89,28 @@ class PoliteClient:
             timeout=config.TIMEOUT_S,
             follow_redirects=True,
         )
-        self._robots: dict[str, urllib.robotparser.RobotFileParser] = {}
+        self._robots: dict[str, Robots] = {}
         self._robots_ok: dict[str, bool] = {}
         self._last_hit: dict[str, float] = {}
 
-    def _robots_for(self, url: str) -> urllib.robotparser.RobotFileParser:
+    def _robots_for(self, url: str) -> Robots:
         parts = urlsplit(url)
         origin = f"{parts.scheme}://{parts.netloc}"
         if origin not in self._robots:
-            rp = urllib.robotparser.RobotFileParser()
             self._robots_ok[origin] = True
             try:
                 r = self.client.get(f"{origin}/robots.txt")
                 # No robots.txt (404) means everything is allowed; a server
                 # error means we can't know, so be conservative and disallow.
                 if r.status_code == 404:
-                    rp.parse([])
+                    rp = Robots([])
                 elif r.status_code >= 400:
-                    rp.parse(["User-agent: *", "Disallow: /"])
+                    rp = Robots(["User-agent: *", "Disallow: /"])
                     self._robots_ok[origin] = False
                 else:
-                    rp.parse(r.text.splitlines())
+                    rp = Robots(r.text.splitlines())
             except httpx.HTTPError:
-                rp.parse(["User-agent: *", "Disallow: /"])
+                rp = Robots(["User-agent: *", "Disallow: /"])
                 self._robots_ok[origin] = False
             self._robots[origin] = rp
         return self._robots[origin]
