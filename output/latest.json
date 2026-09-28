@@ -1,7 +1,7 @@
 {
   "run_metadata": {
-    "run_started_utc": "2026-09-28T08:08:25Z",
-    "run_finished_utc": "2026-09-28T08:09:33Z",
+    "run_started_utc": "2026-09-28T08:11:53Z",
+    "run_finished_utc": "2026-09-28T08:13:01Z",
     "scraper_version": "0.1.0",
     "budget_inc_vat": {
       "preferred": 25000,
@@ -10,6 +10,68 @@
     "coverage_note": "AA browse pages show a sample only; the full AA search is disallowed by robots.txt. Not exhaustive.",
     "cards_seen": 116,
     "stage1_candidates": 20,
+    "detail_rejected": [
+      {
+        "listing_id": "aa:14-3585982",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:120-75232",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:59-1826525",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:59-1806334",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:73-932348",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:14-3575591",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:92-231321",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:154-100207",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:154-100158",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:73-1122443",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:6-3111324",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:14-3593450",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:14-3563805",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:14-3563804",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:14-3575076",
+        "reason": "diesel"
+      }
+    ],
     "sources": [
       {
         "source": "aa_browse",
@@ -104,157 +166,12 @@
         "small battery (68kWh) - roughly 100 real miles, expect a charging stop on longer trips",
         "very low mileage for age (4,137 mi in ~4 yrs) - check MOT history"
       ],
-      "scraped_at_utc": "2026-09-28T08:09:33Z",
+      "scraped_at_utc": "2026-09-28T08:13:01Z",
       "note": "Ford E-Transit 390 L3 H2 68kWh, 2022, ~4.1k miles, £19,350+VAT, Lookers Colchester. Cheapest large high-roof EV seen so far. Transit is narrow: crosswise bed unlikely. Check MOT history for mileage.",
       "status": "live"
     }
   ],
   "vans": [
-    {
-      "listing_id": "aa:154-100207",
-      "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/154-100207",
-      "title": "Vauxhall MOVANO 2.2 Movano L3H2 F3500 Edition T D S/S",
-      "starred": false,
-      "sold": false,
-      "platform": "stellantis:movano",
-      "tier": "tier1",
-      "fuel": null,
-      "roof": 2,
-      "wheelbase": 3,
-      "battery_kwh": null,
-      "year": 2022,
-      "mileage": 133108,
-      "price_listed": 8271,
-      "price_plus_vat": true,
-      "price_inc_vat": 9925,
-      "price_band": "preferred",
-      "dealer": "Car Motion",
-      "registration": "KN22OGW",
-      "rejected_reason": null,
-      "score": 77,
-      "flags": [
-        "fuel not stated in title",
-        "battery size unknown - older vans may have small packs"
-      ],
-      "scraped_at_utc": "2026-09-28T08:09:12Z"
-    },
-    {
-      "listing_id": "aa:59-1826525",
-      "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/59-1826525",
-      "title": "VAUXHALL MOVANO White 2.2 CDTi 3500 BiTurbo Dynamic L2 H2 Van, 65,700 miles, Eur",
-      "starred": false,
-      "sold": false,
-      "platform": "stellantis:movano",
-      "tier": "tier1",
-      "fuel": null,
-      "roof": 2,
-      "wheelbase": 2,
-      "battery_kwh": null,
-      "year": 2022,
-      "mileage": 65700,
-      "price_listed": 12999,
-      "price_plus_vat": true,
-      "price_inc_vat": 15599,
-      "price_band": "preferred",
-      "dealer": "Approved Cars Limited",
-      "registration": "SL72NCE",
-      "rejected_reason": null,
-      "score": 72,
-      "flags": [
-        "fuel not stated in title",
-        "battery size unknown - older vans may have small packs"
-      ],
-      "scraped_at_utc": "2026-09-28T08:08:58Z"
-    },
-    {
-      "listing_id": "aa:59-1806334",
-      "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/59-1806334",
-      "title": "VAUXHALL MOVANO 2.3 CDTi 3500 FWD L2 H2 Euro 6 5dr",
-      "starred": false,
-      "sold": false,
-      "platform": "stellantis:movano",
-      "tier": "tier1",
-      "fuel": null,
-      "roof": 2,
-      "wheelbase": 2,
-      "battery_kwh": null,
-      "year": 2019,
-      "mileage": 114000,
-      "price_listed": 7490,
-      "price_plus_vat": true,
-      "price_inc_vat": 8988,
-      "price_band": "preferred",
-      "dealer": "Podium PCL",
-      "registration": "BW19CKJ",
-      "rejected_reason": null,
-      "score": 72,
-      "flags": [
-        "fuel not stated in title",
-        "battery size unknown - older vans may have small packs"
-      ],
-      "scraped_at_utc": "2026-09-28T08:09:01Z"
-    },
-    {
-      "listing_id": "aa:14-3575591",
-      "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/14-3575591",
-      "title": "Vauxhall Movano Dynamic L2 H2 2.2 Turbo 140ps",
-      "starred": false,
-      "sold": false,
-      "platform": "stellantis:movano",
-      "tier": "tier1",
-      "fuel": null,
-      "roof": 2,
-      "wheelbase": 2,
-      "battery_kwh": null,
-      "year": 2023,
-      "mileage": 7120,
-      "price_listed": 17950,
-      "price_plus_vat": true,
-      "price_inc_vat": 21540,
-      "price_band": "preferred",
-      "dealer": "Vanwise Group",
-      "registration": "DN23GZA",
-      "rejected_reason": null,
-      "score": 72,
-      "flags": [
-        "fuel not stated in title",
-        "battery size unknown - older vans may have small packs"
-      ],
-      "scraped_at_utc": "2026-09-28T08:09:05Z"
-    },
-    {
-      "listing_id": "aa:92-231321",
-      "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/92-231321",
-      "title": "Vauxhall Movano 2.3 Turbo D 135ps H2 Van",
-      "starred": false,
-      "sold": false,
-      "platform": "stellantis:movano",
-      "tier": "tier1",
-      "fuel": null,
-      "roof": 2,
-      "wheelbase": null,
-      "battery_kwh": null,
-      "year": 2021,
-      "mileage": 25359,
-      "price_listed": 16794,
-      "price_plus_vat": false,
-      "price_inc_vat": 16794,
-      "price_band": "preferred",
-      "dealer": "Perrys Milton Keynes",
-      "registration": "DY21OGZ",
-      "rejected_reason": null,
-      "score": 72,
-      "flags": [
-        "fuel not stated in title",
-        "battery size unknown - older vans may have small packs"
-      ],
-      "scraped_at_utc": "2026-09-28T08:09:08Z"
-    },
     {
       "listing_id": "aa:35-360935",
       "source": "aa",
@@ -274,43 +191,14 @@
       "price_plus_vat": true,
       "price_inc_vat": 34553,
       "price_band": "over_ceiling",
-      "dealer": null,
+      "dealer": "Stellantis &You Sheffield",
       "registration": "BX74EHF",
       "rejected_reason": null,
       "score": 72,
       "flags": [
         "over ceiling (£34,553 inc VAT)"
       ],
-      "scraped_at_utc": "2026-09-28T08:09:10Z"
-    },
-    {
-      "listing_id": "aa:154-100158",
-      "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/154-100158",
-      "title": "Vauxhall MOVANO 2.3 Movano L2H2 F3500 CDTI",
-      "starred": false,
-      "sold": false,
-      "platform": "stellantis:movano",
-      "tier": "tier1",
-      "fuel": null,
-      "roof": 2,
-      "wheelbase": 2,
-      "battery_kwh": null,
-      "year": 2021,
-      "mileage": 151348,
-      "price_listed": 6971,
-      "price_plus_vat": true,
-      "price_inc_vat": 8365,
-      "price_band": "preferred",
-      "dealer": "Car Motion",
-      "registration": "BT21JHZ",
-      "rejected_reason": null,
-      "score": 72,
-      "flags": [
-        "fuel not stated in title",
-        "battery size unknown - older vans may have small packs"
-      ],
-      "scraped_at_utc": "2026-09-28T08:09:14Z"
+      "scraped_at_utc": "2026-09-28T08:12:38Z"
     },
     {
       "listing_id": "aa:120-82607",
@@ -331,42 +219,12 @@
       "price_plus_vat": false,
       "price_inc_vat": 21994,
       "price_band": "preferred",
-      "dealer": "Anchor Group 0118 344 2202 * Get directions Book a test drive Book a pre-purchase vehicle inspection Message dealer Chat with us View all stock at this dealer * Calls may be recorded for training and monitoring purposes. Please refrain from providing credit/debit card information on these calls. If you do so it is at your own risk. Overview Mileage: 20,563 Year: 2024 Fuel type: Electric Transmission: Automatic Body type: Panel van Colour: White Doors: 0 Please note: Dealers are responsible for the content of their listings and are expected to include all fees in the advertised price. You should always confirm all listing details with the dealer before purchasing. Vehicle details Discover the impressive 2024 MAXUS eDeliver 9 88.5kWh Panel Van, an advanced electric automatic model designed for modern commercial demands. This front-wheel drive, 5-door Panel Van offers robust performance with its 204 ps electric motor and a substantial 88.5 kWh battery, providing an excellent range of up to 185 miles on a single charge. The L3H3 configuration ensures ample cargo space, while the comfortable cabin accommodates three occupants. Its automatic transmission delivers a smooth and effortless driving experience, perfect for navigating urban environments and longer journeys alike. With its practical design and zero-emission capability, the eDeliver 9 is a smart choice for businesses seeking efficiency and reliability. Over the last 2 years we have won multiple industry awards, including MotorTrader Used Van Dealer of the Year 2025, MotorTrader UK Car Dealership of the Year, the Rising Star Award, MotorTrader LCV Dealer of the Year, MotorTrader Digital Initiative of the Year, MotorTrader Commercial Dealer Website of the Year, SME UK Enterprise Awards Best Pre-Owned Van Retailer, and 2024 MotorTrader Independent Van Dealer of the Year. Our commitment to excellence is reflected in our Trustpilot score of 5/5 stars, which demonstrates our excellent customer service and product quality. At Anchor Cars, we offer flexible delivery options to suit your needs, along with comprehensive care packs designed to keep your vehicle in top condition. Every vehicle comes with our customer guarantee, ensuring peace of mind with your purchase. To learn more about this MAXUS eDeliver 9 or any of our other quality vehicles, please do not hesitate to phone us on",
+      "dealer": "Anchor Group",
       "registration": null,
       "rejected_reason": null,
       "score": 65,
       "flags": [],
-      "scraped_at_utc": "2026-09-28T08:08:54Z"
-    },
-    {
-      "listing_id": "aa:73-932348",
-      "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/73-932348",
-      "title": "Vauxhall Movano Aluminium, Beaver Tail",
-      "starred": false,
-      "sold": false,
-      "platform": "stellantis:movano",
-      "tier": "tier1",
-      "fuel": null,
-      "roof": null,
-      "wheelbase": null,
-      "battery_kwh": null,
-      "year": 2018,
-      "mileage": 93466,
-      "price_listed": 7500,
-      "price_plus_vat": true,
-      "price_inc_vat": 9000,
-      "price_band": "preferred",
-      "dealer": "Van Diesel",
-      "registration": "DX18OSA",
-      "rejected_reason": null,
-      "score": 60,
-      "flags": [
-        "fuel not stated in title",
-        "roof not stated - check",
-        "battery size unknown - older vans may have small packs"
-      ],
-      "scraped_at_utc": "2026-09-28T08:09:03Z"
+      "scraped_at_utc": "2026-09-28T08:12:22Z"
     },
     {
       "listing_id": "aa:50-91967",
@@ -378,7 +236,7 @@
       "platform": "ford:transit",
       "tier": "tier2",
       "fuel": "electric",
-      "roof": null,
+      "roof": 2,
       "wheelbase": 3,
       "battery_kwh": null,
       "year": 2024,
@@ -387,106 +245,14 @@
       "price_plus_vat": true,
       "price_inc_vat": 23880,
       "price_band": "preferred",
-      "dealer": null,
+      "dealer": "Sandicliffe Ford Transit Centre Nottingham",
       "registration": "HV24YTN",
       "rejected_reason": null,
-      "score": 45,
+      "score": 57,
       "flags": [
-        "roof not stated - check",
         "battery size unknown - older vans may have small packs"
       ],
-      "scraped_at_utc": "2026-09-28T08:08:52Z"
-    },
-    {
-      "listing_id": "aa:120-75232",
-      "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/120-75232",
-      "title": "Ford Transit AUTO LWB L3H3 High Roof Limited 350 A/C Alloys Camera Nav Sensor",
-      "starred": false,
-      "sold": false,
-      "platform": "ford:transit",
-      "tier": "tier2",
-      "fuel": null,
-      "roof": 3,
-      "wheelbase": 3,
-      "battery_kwh": null,
-      "year": 2025,
-      "mileage": 6955,
-      "price_listed": 28849,
-      "price_plus_vat": true,
-      "price_inc_vat": 34619,
-      "price_band": "over_ceiling",
-      "dealer": "Anchor Group 0118 344 2202 * Get directions Book a test drive Book a pre-purchase vehicle inspection Message dealer Chat with us View all stock at this dealer * Calls may be recorded for training and monitoring purposes. Please refrain from providing credit/debit card information on these calls. If you do so it is at your own risk. Overview Mileage: 6,955 Year: 2025 Fuel type: Diesel Transmission: Automatic Body type: Panel van Colour: Silver Doors: 5 Engine size: 2.0 L CO 2 Emissions: 242 g/km Please note: Dealers are responsible for the content of their listings and are expected to include all fees in the advertised price. You should always confirm all listing details with the dealer before purchasing. Vehicle details This Ford Transit 350 is a superb Panel Van, equipped with a responsive 2.0L Diesel Automatic engine. Enjoy comfortable journeys with Air Con, stylish Alloys, and advanced features such as a Reverse Camera for easy maneuvering, Satellite Navigation to guide your way, and Parking Sensors for added safety. Over the last 2 years we have won multiple industry awards, including MotorTrader Used Van Dealer of the Year 2025, MotorTrader UK Car Dealership of the Year, Rising Star Award, LCV Dealer of the Year, Digital Initiative of the Year, Commercial Dealer Website of the Year, SME UK Enterprise Awards Best Pre-Owned Van Retailer, and the 2024 MotorTrader Independent Van Dealer of the Year. We pride ourselves on our industry-leading Trustpilot score of 5/5 stars, excellent. We offer convenient nationwide delivery options and comprehensive care packs to ensure your peace of mind. Every vehicle comes with our customer guarantee. Speak to our friendly team today to find out more. Call us on",
-      "registration": null,
-      "rejected_reason": null,
-      "score": 40,
-      "flags": [
-        "fuel not stated in title",
-        "battery size unknown - older vans may have small packs",
-        "over ceiling (£34,619 inc VAT)"
-      ],
-      "scraped_at_utc": "2026-09-28T08:08:56Z"
-    },
-    {
-      "listing_id": "aa:73-1122443",
-      "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/73-1122443",
-      "title": "Fiat Ducato",
-      "starred": false,
-      "sold": false,
-      "platform": "stellantis:ducato",
-      "tier": "tier1",
-      "fuel": null,
-      "roof": null,
-      "wheelbase": null,
-      "battery_kwh": null,
-      "year": 2014,
-      "mileage": 26985,
-      "price_listed": null,
-      "price_plus_vat": null,
-      "price_inc_vat": null,
-      "price_band": null,
-      "dealer": "JMS Used Cars LTD",
-      "registration": "LA14JFJ",
-      "rejected_reason": null,
-      "score": 40,
-      "flags": [
-        "fuel not stated in title",
-        "roof not stated - check",
-        "battery size unknown - older vans may have small packs",
-        "price not found"
-      ],
-      "scraped_at_utc": "2026-09-28T08:09:17Z"
-    },
-    {
-      "listing_id": "aa:6-3111324",
-      "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/6-3111324",
-      "title": "Mercedes-Benz Sprinter Cherry picker",
-      "starred": false,
-      "sold": false,
-      "platform": "mercedes:sprinter",
-      "tier": "tier2",
-      "fuel": null,
-      "roof": null,
-      "wheelbase": null,
-      "battery_kwh": null,
-      "year": 2017,
-      "mileage": 89500,
-      "price_listed": 9999,
-      "price_plus_vat": true,
-      "price_inc_vat": 11999,
-      "price_band": "preferred",
-      "dealer": "A&M Cars South Ltd",
-      "registration": "WR67HWT",
-      "rejected_reason": null,
-      "score": 40,
-      "flags": [
-        "fuel not stated in title",
-        "roof not stated - check",
-        "battery size unknown - older vans may have small packs"
-      ],
-      "scraped_at_utc": "2026-09-28T08:09:21Z"
+      "scraped_at_utc": "2026-09-28T08:12:20Z"
     },
     {
       "listing_id": "aa:50-74694",
@@ -498,8 +264,8 @@
       "platform": "maxus:edeliver9",
       "tier": "tier2",
       "fuel": "electric",
-      "roof": 2,
-      "wheelbase": null,
+      "roof": 3,
+      "wheelbase": 3,
       "battery_kwh": 88.5,
       "year": 2021,
       "mileage": 55827,
@@ -510,163 +276,11 @@
       "dealer": "Sandicliffe Ford Loughborough",
       "registration": "FE23UCN",
       "rejected_reason": null,
-      "score": 37,
+      "score": 45,
       "flags": [
         "over ceiling (£46,788 inc VAT)"
       ],
-      "scraped_at_utc": "2026-09-28T08:08:49Z"
-    },
-    {
-      "listing_id": "aa:14-3575076",
-      "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/14-3575076",
-      "title": "Mercedes-Benz Sprinter 315 Premium L2 H2 MWB 2.0150PS",
-      "starred": false,
-      "sold": false,
-      "platform": "mercedes:sprinter",
-      "tier": "tier2",
-      "fuel": null,
-      "roof": 2,
-      "wheelbase": 2,
-      "battery_kwh": null,
-      "year": 2024,
-      "mileage": 53250,
-      "price_listed": 23995,
-      "price_plus_vat": true,
-      "price_inc_vat": 28794,
-      "price_band": "stretch",
-      "dealer": "Vanwise Group",
-      "registration": "KM24MMA",
-      "rejected_reason": null,
-      "score": 37,
-      "flags": [
-        "fuel not stated in title",
-        "battery size unknown - older vans may have small packs",
-        "stretch price (£28,794 inc VAT)"
-      ],
-      "scraped_at_utc": "2026-09-28T08:09:30Z"
-    },
-    {
-      "listing_id": "aa:14-3585982",
-      "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/14-3585982",
-      "title": "Mercedes-Benz Sprinter 3.5t High Roof Van Auto L2/H2",
-      "starred": false,
-      "sold": false,
-      "platform": "mercedes:sprinter",
-      "tier": "tier2",
-      "fuel": null,
-      "roof": 2,
-      "wheelbase": 2,
-      "battery_kwh": null,
-      "year": 2023,
-      "mileage": 28000,
-      "price_listed": 28000,
-      "price_plus_vat": true,
-      "price_inc_vat": 33600,
-      "price_band": "over_ceiling",
-      "dealer": "Herts Prestige.com",
-      "registration": "YA23KOP",
-      "rejected_reason": null,
-      "score": 32,
-      "flags": [
-        "fuel not stated in title",
-        "battery size unknown - older vans may have small packs",
-        "over ceiling (£33,600 inc VAT)"
-      ],
-      "scraped_at_utc": "2026-09-28T08:08:47Z"
-    },
-    {
-      "listing_id": "aa:14-3593450",
-      "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/14-3593450",
-      "title": "Mercedes-Benz Sprinter Select  L2 H2 2.0 170ps",
-      "starred": false,
-      "sold": false,
-      "platform": "mercedes:sprinter",
-      "tier": "tier2",
-      "fuel": null,
-      "roof": 2,
-      "wheelbase": 2,
-      "battery_kwh": null,
-      "year": 2026,
-      "mileage": 6010,
-      "price_listed": 39995,
-      "price_plus_vat": true,
-      "price_inc_vat": 47994,
-      "price_band": "over_ceiling",
-      "dealer": "Vanwise Group",
-      "registration": "KN26GYB",
-      "rejected_reason": null,
-      "score": 32,
-      "flags": [
-        "fuel not stated in title",
-        "battery size unknown - older vans may have small packs",
-        "over ceiling (£47,994 inc VAT)"
-      ],
-      "scraped_at_utc": "2026-09-28T08:09:23Z"
-    },
-    {
-      "listing_id": "aa:14-3563805",
-      "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/14-3563805",
-      "title": "Mercedes-Benz Sprinter 315cdi Progressive L3 RWD 3.5t 2.0l 150ps",
-      "starred": false,
-      "sold": false,
-      "platform": "mercedes:sprinter",
-      "tier": "tier2",
-      "fuel": null,
-      "roof": null,
-      "wheelbase": 3,
-      "battery_kwh": null,
-      "year": 2024,
-      "mileage": 45750,
-      "price_listed": 30995,
-      "price_plus_vat": true,
-      "price_inc_vat": 37194,
-      "price_band": "over_ceiling",
-      "dealer": "Vanwise Group",
-      "registration": "BJ74HFW",
-      "rejected_reason": null,
-      "score": 25,
-      "flags": [
-        "fuel not stated in title",
-        "roof not stated - check",
-        "battery size unknown - older vans may have small packs",
-        "over ceiling (£37,194 inc VAT)"
-      ],
-      "scraped_at_utc": "2026-09-28T08:09:26Z"
-    },
-    {
-      "listing_id": "aa:14-3563804",
-      "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/14-3563804",
-      "title": "Mercedes-Benz Sprinter 315cdi Progressive L3 RWD 3.5t 2.0l 150ps",
-      "starred": false,
-      "sold": false,
-      "platform": "mercedes:sprinter",
-      "tier": "tier2",
-      "fuel": null,
-      "roof": null,
-      "wheelbase": 3,
-      "battery_kwh": null,
-      "year": 2024,
-      "mileage": 49600,
-      "price_listed": 30995,
-      "price_plus_vat": true,
-      "price_inc_vat": 37194,
-      "price_band": "over_ceiling",
-      "dealer": "Vanwise Group",
-      "registration": "BJ74HFY",
-      "rejected_reason": null,
-      "score": 25,
-      "flags": [
-        "fuel not stated in title",
-        "roof not stated - check",
-        "battery size unknown - older vans may have small packs",
-        "over ceiling (£37,194 inc VAT)"
-      ],
-      "scraped_at_utc": "2026-09-28T08:09:28Z"
+      "scraped_at_utc": "2026-09-28T08:12:18Z"
     },
     {
       "listing_id": "aa:6-3370584",
@@ -687,7 +301,7 @@
       "price_plus_vat": false,
       "price_inc_vat": 139989,
       "price_band": "over_ceiling",
-      "dealer": "Blackstone Motors Limited 020 3018 4583 * Get directions Book a test drive Book a pre-purchase vehicle inspection Arrange delivery - get a quote Message dealer Chat with us View all stock at this dealer * Calls may be recorded for training and monitoring purposes. Please refrain from providing credit/debit card information on these calls. If you do so it is at your own risk. Overview Mileage: 1,500 Year: 2025 Fuel type: N/a Transmission: N/a Body type: N/a Colour: N/a Doors: 0 CO 2 Emissions: 262 g/km Please note: Dealers are responsible for the content of their listings and are expected to include all fees in the advertised price. You should always confirm all listing details with the dealer before purchasing. Vehicle details Silk Jet VIP Luxury. An outstanding 2025 Mercedes-Benz Sprinter with a bespoke Silk Jet luxury conversion, offering the ultimate VIP travel experience. Finished to an exceptional standard, this vehicle combines the practicality and reliability of the Sprinter with a first-class executive interior designed for comfort, entertainment, and luxury.The rear cabin features premium reclining leather seating, a full privacy partition, ambient mood lighting, and a stunning star-lit ceiling, creating a private jet atmosphere on the road. Passengers can enjoy a large-screen TV, integrated Xbox gaming system, and onboard fridge, making every journey comfortable and enjoyable whether for business or leisure. - Premium Silk Jet VIP conversion- Luxury reclining leather seating- Full electric privacy partition- Star-lit ceiling- Large-screen TV entertainment system- Integrated Xbox gaming console- Onboard fridge- Ambient mood lighting- Privacy glass- Executive rear passenger cabin8.9% Low rate finance packages available, HP available, LP available, ****Apply for finance on our website for an instant decision****, 5 days driveway insurance available.Take advantage of our full bespoke in house detailing package to suit your needs, inclusive of Paint Protection Film (XPEL), Paint Correction, Nano Ceramic Coating, Trackers, Immobilisers and Bodykits. All of our work can be found on our social media Instagram @blackstonemotorsuk & @limitlessdetailinguk. Open 7 days a week and calls taken up till 10pm every day. Viewings strictly by appointment.. Read more Remember to check the details of this car with the dealer before you buy it to make sure that all the information is accurate. Vehicle history check For CN25OVM Not recorded as stolen No third-party trace 0 previous keepers show The current keeper is not included in the number of previous keepers. This vehicle has had 1 registered keeper from new. Please note that the keeper is not necessarily the owner, it may be a company vehicle or belong to a third party. No plate changes No colour changes Mileage data not available Not an insurance write-off Data for this history check supplied: 07/09/2026 at 04:12 What's not included? Outstanding finance details Estimated cost of vehicle ownership MOT history & common failures* Full vehicle specification Mileage discrepancies* Market valuation* Vehicle Tax Check *Provided where available Get peace of mind with an instant full vehicle history check and uncover any potential issues before you buy. Get a full history check Selling made easy with a free instant valuation Enter your reg number below to get a valuation estimate from our trusted partner, Motorway If you proceed to sell your vehicle through Motorway, a service fee will be applicable upon sale, calculated based on the final sale price. See the Motorway website for more information. Your reg number Get a valuation Please note: if you tap 'Get a valuation', you will be taken directly to the Motorway website. Buy with the AA This dealer has signed up to our AA Cars Standards. AA Cars Standards Find out more about AA Cars Standards Get exclusive AA offers 12 months free breakdown cover (or discounted upgrade if you're an AA member) and £75 off a Service & MOT. T&Cs apply Activate offers 12 months free breakdown cover Included with this vehicle Free Accident Assist service available 24/7 Already with the AA? Upgrade your cover for only £10 for the year^ Unlock your offers up to six months after buying one of our vehicles. Activate cover ^T&C's apply Get 10% off Car Insurance Take out a quote today and we will automatically apply 10% discount. Get a quote today T&C's apply Category write-offs A vehicle that has been in an accident will be assessed by insurance companies and assigned a category: A, B, S or N. However, we only list Cat S or N cars as Cat A and B cars are not roadworthy and safe. Category S (formerly Category C) The 'S' in Cat S stands for structural damage. This means the vehicle has damage to its structure/chassis, which is more than just cosmetic damage. But the vehicle can be professionally repaired, making it safe and roadworthy. Category N (formerly Category D) Similarly, the 'N' in Cat N stands for non-structural damage. Here, the vehicle has sustained damage, but it has not affected the structure/chassis. A Cat N car is safe to drive as the damage could be minimal/cosmetic. Buying a written-off vehicle: Do a full vehicle history check to identify category vehicles. Make sure to check with the dealer if a Cat S/N vehicle has been professionally repaired. Book a vehicle inspection and our experts will look over a Category vehicle for you. Exclusive breakdown offers - Terms and Conditions Offers can not be redeemed in a breakdown situation. New AA member offers are available for the first 12 months of cover only and are not available to existing members or at renewal. Discounts or promotions are not applicable to Parts & Garage cover, or to Key Cover, or to cover for Commercial Use. Cover will start 24 hours after activation. The premium for basic breakdown cover will be paid by Used Car Sites Limited (trading as AA Cars) for the first 12 months of cover only. If a customer chooses not to take the free Basic Breakdown Cover and instead purchases an alternative breakdown policy at the point of activation, payment will only be available by monthly instalments and annual payment will not be available. Other fees may be payable by you in accordance with the terms and conditions . You'll receive notice beforehand of the price of membership after the first 12 months, so you'll have plenty of time to change or cancel your cover. Free breakdown cover is only available via the call centre. Breakdown cover is subject to terms and conditions . Offer available to customers who within the last 6 months have bought a vehicle from a dealership partnered with AA Cars or purchased an AA Warranty product. Full details on the offers available and how to redeem them will be revealed upon completing the form above, which includes entering the registration of the vehicle purchased or covered by your AA warranty. Not available in conjunction with any other breakdown cover offer or discount and can be withdrawn or amended at any time. Existing member offers apply to existing AA Members who hold a full membership (excludes members who have Basic Breakdown membership) for personal use 1 vehicles only. One discounted upgrade can be added to the customer's existing breakdown policy for the remainder of their policy. The upgrade will be renewed automatically, at full price, unless we are told otherwise or if the customer's existing policy doesn't already automatically renew. 1 Personal use means the vehicle is used only for private and domestic purposes and not for any commercial purposes such as: carrying items/people for money, delivery or collection of goods, transporting people, or carrying equipment, tools or materials for commercial purposes, taking part in track days or any other sport (or any combination of private, domestic and commercial use). AA breakdown cover is arranged by Automobile Association Insurance Services Limited. Registered office: Level 3, Plant, Basing View, Basingstoke, Hampshire, RG21 4HG. Registered in England and Wales number 2414212. Automobile Association Insurance Services Limited is authorised and regulated by the Financial Conduct Authority. † All information in this site relating to the history check of a vehicle is provided by Experian Ltd. AA Cars provides no guarantee of completeness, accuracy or timeliness of this information and it provides no warranty or representation whatsoever in relation to such information. In no event will AA Cars, its related partnerships or corporations, or the partners, agents or employees thereof be liable to you or anyone else for any decision made or action taken in reliance on this information or for any consequential, special or similar damages, even if advised of the possibility of such damages. AA Car Finance is provided by Evolution Funding Limited. Used Car Sites Limited, on behalf of AA Financial Services Limited introduces you to Evolution Funding Limited and each are acting as a credit broker and not a lender. AA Financial Services Limited receives a commission from Evolution Funding Services for that introduction, and is not acting impartially in making the introduction. The amount of commission can vary based on the lender selected which is most appropriate for you and also the amount you borrow and the term the loan is borrowed over. You will be advised of the amount in good time before your agreement is signed. By submitting an application for finance you consent to the commission being paid and acknowledge AA Financial Services Limited is not acting impartially. Evolution Funding Limited Registered Office: Thompson Close, Whittington Moor, Chesterfield, Derbyshire, S41 9AZ. Registered in England and Wales with company number:",
+      "dealer": null,
       "registration": "CN25OVM",
       "rejected_reason": null,
       "score": 20,
@@ -697,7 +311,7 @@
         "battery size unknown - older vans may have small packs",
         "over ceiling (£139,989 inc VAT)"
       ],
-      "scraped_at_utc": "2026-09-28T08:09:19Z"
+      "scraped_at_utc": "2026-09-28T08:12:47Z"
     }
   ]
 }
