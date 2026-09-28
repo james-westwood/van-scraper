@@ -1,0 +1,62 @@
+name: Weekly van scrape
+
+on:
+  schedule:
+    # 04:30 UTC Monday: after the job scrape (04:00), well before the 07:00
+    # Cowork session. Same buffer reasoning as job-board-scraper.
+    - cron: '30 4 * * 1'
+  workflow_dispatch:
+    inputs:
+      probe:
+        description: 'Run the source probe instead of the scrape'
+        type: boolean
+        default: false
+      starred_only:
+        description: 'Only re-check starred vans'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: van-scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - run: uv sync --group dev
+      - name: Unit tests
+        run: uv run pytest -q
+
+      - name: Probe sources
+        if: ${{ inputs.probe }}
+        run: uv run python scripts/probe_sources.py | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Scrape
+        if: ${{ !inputs.probe }}
+        run: uv run python -m vanscraper.run ${{ inputs.starred_only && '--starred-only' || '' }}
+
+      - name: Commit results
+        if: ${{ !inputs.probe }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/
+          if git diff --staged --quiet; then
+            echo "No change in output."
+          else
+            git commit -m "Van scrape $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
