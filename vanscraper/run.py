@@ -31,7 +31,7 @@ def now() -> str:
 
 
 def van_record(detail: aa.Detail, source: str, starred: bool = False) -> dict:
-    facts = classify_title(detail.title or "")
+    facts = classify_title(detail.classify_text())
     inc = price_inc_vat(detail.price, detail.plus_vat)
     vat_conflict = bool(detail.title and "no vat" in detail.title.lower() and detail.plus_vat)
     a = assess(facts, inc, detail.year, detail.mileage, vat_conflict)
@@ -121,6 +121,9 @@ def run(skip_discovery: bool = False) -> dict:
         except Exception as e:  # noqa: BLE001
             starred_out.append({**s, "status": f"check failed: {type(e).__name__}: {e}"})
 
+    # The detail page can reveal what the title hid (e.g. "Fuel type: Diesel").
+    detail_rejected = [v for v in vans if v.get("rejected_reason")]
+    vans = [v for v in vans if not v.get("rejected_reason")]
     vans.sort(key=lambda v: v.get("score", -999), reverse=True)
     return {
         "run_metadata": {
@@ -133,6 +136,8 @@ def run(skip_discovery: bool = False) -> dict:
                               "search is disallowed by robots.txt. Not exhaustive."),
             "cards_seen": cards_seen,
             "stage1_candidates": len(candidates),
+            "detail_rejected": [{"listing_id": v["listing_id"], "reason": v["rejected_reason"]}
+                                for v in detail_rejected],
             "sources": sources,
         },
         "starred": starred_out,

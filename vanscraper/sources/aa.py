@@ -85,6 +85,30 @@ class Detail:
     dealer: str | None
     registration: str | None
     sold: bool
+    # Structured "Overview" fields and the dealer's free text. Titles often
+    # omit fuel/roof/battery ("Vauxhall MOVANO 2.2 ... T D"), so these fill gaps.
+    fuel_type: str | None = None     # "electric" | "diesel" | "petrol" | ...
+    body_type: str | None = None     # e.g. "high volume/high roof van", "dropside"
+    description: str | None = None
+
+    def classify_text(self) -> str:
+        """Title plus structured facts, for classify_title().
+
+        Only well-defined signals are appended: the Overview fuel and body type,
+        and from the description just the first roof code (L3H3 / high roof)
+        and battery size. Never the features list ("Electric Windows").
+        """
+        parts = [self.title or ""]
+        if self.fuel_type:
+            parts.append(self.fuel_type)
+        if self.body_type:
+            parts.append(self.body_type)
+        if self.description:
+            d = self.description.lower()
+            roof = re.search(r"\bl\d\s?h[1-3]\b|\bhigh[\s-]?roof\b", d)
+            kwh = re.search(r"\d{2,3}(?:\.\d)?\s?kwh\b", d)
+            parts += [m.group(0) for m in (roof, kwh) if m]
+        return " ".join(parts)
 
 
 def parse_detail_page(html: str, url: str) -> Detail:
@@ -115,7 +139,17 @@ def parse_detail_page(html: str, url: str) -> Detail:
     year = _int_after(r"Year:\s*(\d{4})", text)
     mileage = _int_after(r"Mileage:\s*([\d,]+)", text)
     reg_m = re.search(r"Vehicle history check\s+For\s+([A-Z0-9]{5,8})\b", text)
-    dealer_m = re.search(r"Contact the dealer\s+(.+?)\s+\d{5}\s?\d{3}", text)
+    # UK numbers come as 01709 622 638, 0118 344 2202, 020 3018 4583 ...
+    dealer_m = re.search(r"Contact the dealer\s+(.{1,80}?)\s+0\d{2,4}\s?\d{3}\s?\d{3,4}\b", text)
+    fuel_m = re.search(r"Fuel type:\s*([A-Za-z/ -]+?)\s+Transmission:", text)
+    fuel_type = fuel_m.group(1).strip().lower() if fuel_m else None
+    if fuel_type in ("n/a", ""):
+        fuel_type = None
+    body_m = re.search(r"Body type:\s*(.+?)\s+Colour:", text)
+    body_type = body_m.group(1).strip().lower() if body_m else None
+    if body_type == "n/a":
+        body_type = None
+    desc_m = re.search(r"Vehicle details\s+(.+?)(?:\s+Read more|\s+Vehicle features|\s+Remember to check)", text)
     sold = bool(re.search(r"has now been sold|no longer available", text, re.I))
 
     return Detail(
@@ -123,6 +157,8 @@ def parse_detail_page(html: str, url: str) -> Detail:
         price=price, plus_vat=plus_vat, year=year, mileage=mileage,
         dealer=dealer_m.group(1).strip() if dealer_m else None,
         registration=reg_m.group(1) if reg_m else None, sold=sold,
+        fuel_type=fuel_type, body_type=body_type,
+        description=desc_m.group(1) if desc_m else None,
     )
 
 
