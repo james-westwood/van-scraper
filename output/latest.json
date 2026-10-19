@@ -1,34 +1,30 @@
 {
   "run_metadata": {
-    "run_started_utc": "2026-10-12T12:20:11Z",
-    "run_finished_utc": "2026-10-12T12:21:27Z",
+    "run_started_utc": "2026-10-19T10:08:52Z",
+    "run_finished_utc": "2026-10-19T10:10:01Z",
     "scraper_version": "0.1.0",
     "budget_inc_vat": {
       "preferred": 25000,
       "ceiling": 32000
     },
     "coverage_note": "AA browse pages show a sample only; the full AA search is disallowed by robots.txt. Not exhaustive.",
-    "cards_seen": 117,
-    "stage1_candidates": 23,
+    "cards_seen": 118,
+    "stage1_candidates": 20,
     "detail_rejected": [
-      {
-        "listing_id": "aa:14-3585982",
-        "reason": "diesel"
-      },
       {
         "listing_id": "aa:120-74989",
         "reason": "diesel"
       },
       {
-        "listing_id": "aa:120-75232",
+        "listing_id": "aa:120-78302",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:120-82676",
         "reason": "diesel"
       },
       {
         "listing_id": "aa:59-1826525",
-        "reason": "diesel"
-      },
-      {
-        "listing_id": "aa:6-3501211",
         "reason": "diesel"
       },
       {
@@ -40,7 +36,7 @@
         "reason": "diesel"
       },
       {
-        "listing_id": "aa:6-3502810",
+        "listing_id": "aa:73-1065614",
         "reason": "diesel"
       },
       {
@@ -53,14 +49,6 @@
       },
       {
         "listing_id": "aa:92-231321",
-        "reason": "diesel"
-      },
-      {
-        "listing_id": "aa:154-100158",
-        "reason": "diesel"
-      },
-      {
-        "listing_id": "aa:6-3491220",
         "reason": "diesel"
       },
       {
@@ -89,7 +77,7 @@
         "source": "aa_browse",
         "url": "https://www.theaa.com/used-vans/electric",
         "status": "ok",
-        "cards": 11,
+        "cards": 10,
         "stage1_passed": 0
       },
       {
@@ -97,14 +85,14 @@
         "url": "https://www.theaa.com/used-vans/bodystyle/high-roof-vans",
         "status": "ok",
         "cards": 12,
-        "stage1_passed": 3
+        "stage1_passed": 2
       },
       {
         "source": "aa_browse",
         "url": "https://www.theaa.com/used-vans/large-vans",
         "status": "ok",
         "cards": 8,
-        "stage1_passed": 3
+        "stage1_passed": 4
       },
       {
         "source": "aa_browse",
@@ -117,7 +105,7 @@
         "source": "aa_browse",
         "url": "https://www.theaa.com/used-vans/citroen/relay",
         "status": "ok",
-        "cards": 14,
+        "cards": 16,
         "stage1_passed": 0
       },
       {
@@ -125,14 +113,14 @@
         "url": "https://www.theaa.com/used-vans/vauxhall/movano",
         "status": "ok",
         "cards": 15,
-        "stage1_passed": 10
+        "stage1_passed": 8
       },
       {
         "source": "aa_browse",
         "url": "https://www.theaa.com/used-vans/fiat/ducato",
         "status": "ok",
         "cards": 9,
-        "stage1_passed": 1
+        "stage1_passed": 0
       },
       {
         "source": "aa_browse",
@@ -166,9 +154,9 @@
       "battery_kwh": 68.0,
       "year": 2022,
       "mileage": 4137,
-      "price_listed": 18750,
+      "price_listed": 18325,
       "price_plus_vat": true,
-      "price_inc_vat": 22500,
+      "price_inc_vat": 21990,
       "price_band": "preferred",
       "dealer": "Lookers Ford Transit Centre Colchester",
       "registration": "VO72UCB",
@@ -178,7 +166,7 @@
         "small battery (68kWh) - roughly 100 real miles, expect a charging stop on longer trips",
         "very low mileage for age (4,137 mi in ~4 yrs) - check MOT history"
       ],
-      "scraped_at_utc": "2026-10-12T12:21:27Z",
+      "scraped_at_utc": "2026-10-19T10:10:01Z",
       "note": "Ford E-Transit 390 L3 H2 68kWh, 2022, ~4.1k miles, £19,350+VAT, Lookers Colchester. Cheapest large high-roof EV seen so far. Transit is narrow: crosswise bed unlikely. Check MOT history for mileage.",
       "status": "live"
     }
@@ -210,7 +198,7 @@
       "flags": [
         "stretch price (£29,988 inc VAT)"
       ],
-      "scraped_at_utc": "2026-10-12T12:20:39Z"
+      "scraped_at_utc": "2026-10-19T10:09:17Z"
     },
     {
       "listing_id": "aa:35-360935",
@@ -238,7 +226,7 @@
       "flags": [
         "over ceiling (£34,553 inc VAT)"
       ],
-      "scraped_at_utc": "2026-10-12T12:21:06Z"
+      "scraped_at_utc": "2026-10-19T10:09:45Z"
     },
     {
       "listing_id": "aa:120-82607",
@@ -264,7 +252,7 @@
       "rejected_reason": null,
       "score": 65,
       "flags": [],
-      "scraped_at_utc": "2026-10-12T12:20:44Z"
+      "scraped_at_utc": "2026-10-19T10:09:24Z"
     },
     {
       "listing_id": "aa:50-74694",
@@ -292,7 +280,7 @@
       "flags": [
         "over ceiling (£46,668 inc VAT)"
       ],
-      "scraped_at_utc": "2026-10-12T12:20:37Z"
+      "scraped_at_utc": "2026-10-19T10:09:15Z"
     },
     {
       "listing_id": "aa:6-3370584",
@@ -323,7 +311,7 @@
         "battery size unknown - older vans may have small packs",
         "over ceiling (£139,989 inc VAT)"
       ],
-      "scraped_at_utc": "2026-10-12T12:21:13Z"
+      "scraped_at_utc": "2026-10-19T10:09:47Z"
     }
   ]
 }
