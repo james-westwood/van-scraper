@@ -1,0 +1,259 @@
+{
+  "run_metadata": {
+    "run_started_utc": "2026-10-26T10:23:42Z",
+    "run_finished_utc": "2026-10-26T10:24:45Z",
+    "scraper_version": "0.1.0",
+    "budget_inc_vat": {
+      "preferred": 25000,
+      "ceiling": 32000
+    },
+    "coverage_note": "AA browse pages show a sample only; the full AA search is disallowed by robots.txt. Not exhaustive.",
+    "cards_seen": 115,
+    "stage1_candidates": 17,
+    "detail_rejected": [
+      {
+        "listing_id": "aa:120-74989",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:120-78302",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:59-1826525",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:73-932348",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:6-3515956",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:6-3440864",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:14-3575591",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:92-232953",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:92-231321",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:6-3513526",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:14-3593450",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:14-3563805",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:14-3563804",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:14-3575076",
+        "reason": "diesel"
+      }
+    ],
+    "sources": [
+      {
+        "source": "aa_browse",
+        "url": "https://www.theaa.com/used-vans/electric",
+        "status": "ok",
+        "cards": 11,
+        "stage1_passed": 1
+      },
+      {
+        "source": "aa_browse",
+        "url": "https://www.theaa.com/used-vans/bodystyle/high-roof-vans",
+        "status": "ok",
+        "cards": 10,
+        "stage1_passed": 0
+      },
+      {
+        "source": "aa_browse",
+        "url": "https://www.theaa.com/used-vans/large-vans",
+        "status": "ok",
+        "cards": 6,
+        "stage1_passed": 2
+      },
+      {
+        "source": "aa_browse",
+        "url": "https://www.theaa.com/used-vans/peugeot/boxer",
+        "status": "ok",
+        "cards": 15,
+        "stage1_passed": 0
+      },
+      {
+        "source": "aa_browse",
+        "url": "https://www.theaa.com/used-vans/citroen/relay",
+        "status": "ok",
+        "cards": 16,
+        "stage1_passed": 0
+      },
+      {
+        "source": "aa_browse",
+        "url": "https://www.theaa.com/used-vans/vauxhall/movano",
+        "status": "ok",
+        "cards": 15,
+        "stage1_passed": 8
+      },
+      {
+        "source": "aa_browse",
+        "url": "https://www.theaa.com/used-vans/fiat/ducato",
+        "status": "ok",
+        "cards": 9,
+        "stage1_passed": 1
+      },
+      {
+        "source": "aa_browse",
+        "url": "https://www.theaa.com/used-vans/ford/transit",
+        "status": "ok",
+        "cards": 15,
+        "stage1_passed": 0
+      },
+      {
+        "source": "aa_browse",
+        "url": "https://www.theaa.com/used-vans/mercedes/sprinter",
+        "status": "ok",
+        "cards": 18,
+        "stage1_passed": 5
+      }
+    ]
+  },
+  "starred": [
+    {
+      "listing_id": "aa:168-152844",
+      "source": "aa",
+      "url": "https://www.theaa.com/used-vans/cardetails/168-152844",
+      "title": "FORD TRANSIT 390 68Kwh Trend Panel Van 5Dr Electric Auto Rwd L3 H2 (269 Ps)",
+      "starred": true,
+      "sold": false,
+      "platform": "ford:transit",
+      "tier": "tier2",
+      "fuel": "electric",
+      "roof": 2,
+      "wheelbase": 3,
+      "battery_kwh": 68.0,
+      "year": 2022,
+      "mileage": 4137,
+      "price_listed": 18000,
+      "price_plus_vat": true,
+      "price_inc_vat": 21600,
+      "price_band": "preferred",
+      "dealer": "Lookers Ford Transit Centre Colchester",
+      "registration": "VO72UCB",
+      "rejected_reason": null,
+      "score": 47,
+      "flags": [
+        "small battery (68kWh) - roughly 100 real miles, expect a charging stop on longer trips",
+        "very low mileage for age (4,137 mi in ~4 yrs) - check MOT history"
+      ],
+      "scraped_at_utc": "2026-10-26T10:24:45Z",
+      "note": "Ford E-Transit 390 L3 H2 68kWh, 2022, ~4.1k miles, £19,350+VAT, Lookers Colchester. Cheapest large high-roof EV seen so far. Transit is narrow: crosswise bed unlikely. Check MOT history for mileage.",
+      "status": "live"
+    }
+  ],
+  "vans": [
+    {
+      "listing_id": "aa:35-360935",
+      "source": "aa",
+      "url": "https://www.theaa.com/used-vans/cardetails/35-360935",
+      "title": "Vauxhall Movano Electric 3500 HD 110kWh Prime Panel Van 5dr Electric Auto L3 H2 (11kW Cha",
+      "starred": false,
+      "sold": false,
+      "platform": "stellantis:movano",
+      "tier": "tier1",
+      "fuel": "electric",
+      "roof": 2,
+      "wheelbase": 3,
+      "battery_kwh": 110.0,
+      "year": 2024,
+      "mileage": 14999,
+      "price_listed": 28794,
+      "price_plus_vat": true,
+      "price_inc_vat": 34553,
+      "price_band": "over_ceiling",
+      "dealer": "Stellantis &You Sheffield",
+      "registration": "BX74EHF",
+      "rejected_reason": null,
+      "score": 72,
+      "flags": [
+        "over ceiling (£34,553 inc VAT)"
+      ],
+      "scraped_at_utc": "2026-10-26T10:24:28Z"
+    },
+    {
+      "listing_id": "aa:59-1821220",
+      "source": "aa",
+      "url": "https://www.theaa.com/used-vans/cardetails/59-1821220",
+      "title": "MAXUS EDELIVER 9 72kWh Panel Van 5dr Electric Auto FWD L3 H2 (204 ps) 7 Seater Cr",
+      "starred": false,
+      "sold": false,
+      "platform": "maxus:edeliver9",
+      "tier": "tier2",
+      "fuel": "electric",
+      "roof": 2,
+      "wheelbase": 3,
+      "battery_kwh": 72.0,
+      "year": 2023,
+      "mileage": 39400,
+      "price_listed": 15997,
+      "price_plus_vat": true,
+      "price_inc_vat": 19196,
+      "price_band": "preferred",
+      "dealer": "Amin Motors Ltd",
+      "registration": "SA72ZGP",
+      "rejected_reason": null,
+      "score": 47,
+      "flags": [
+        "small battery (72kWh) - roughly 100 real miles, expect a charging stop on longer trips"
+      ],
+      "scraped_at_utc": "2026-10-26T10:24:05Z"
+    },
+    {
+      "listing_id": "aa:6-3370584",
+      "source": "aa",
+      "url": "https://www.theaa.com/used-vans/cardetails/6-3370584",
+      "title": "Mercedes-Benz Sprinter Silk Jet VIP Luxury Conversion",
+      "starred": false,
+      "sold": false,
+      "platform": "mercedes:sprinter",
+      "tier": "tier2",
+      "fuel": null,
+      "roof": null,
+      "wheelbase": null,
+      "battery_kwh": null,
+      "year": 2025,
+      "mileage": 1500,
+      "price_listed": 139989,
+      "price_plus_vat": false,
+      "price_inc_vat": 139989,
+      "price_band": "over_ceiling",
+      "dealer": "Blackstone Motors Limited",
+      "registration": "CN25OVM",
+      "rejected_reason": null,
+      "score": 20,
+      "flags": [
+        "fuel not stated in title",
+        "roof not stated - check",
+        "battery size unknown - older vans may have small packs",
+        "over ceiling (£139,989 inc VAT)"
+      ],
+      "scraped_at_utc": "2026-10-26T10:24:33Z"
+    }
+  ]
+}

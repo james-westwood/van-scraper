@@ -1,15 +1,15 @@
 {
   "run_metadata": {
-    "run_started_utc": "2026-10-19T10:08:52Z",
-    "run_finished_utc": "2026-10-19T10:10:01Z",
+    "run_started_utc": "2026-10-26T10:23:42Z",
+    "run_finished_utc": "2026-10-26T10:24:45Z",
     "scraper_version": "0.1.0",
     "budget_inc_vat": {
       "preferred": 25000,
       "ceiling": 32000
     },
     "coverage_note": "AA browse pages show a sample only; the full AA search is disallowed by robots.txt. Not exhaustive.",
-    "cards_seen": 118,
-    "stage1_candidates": 20,
+    "cards_seen": 115,
+    "stage1_candidates": 17,
     "detail_rejected": [
       {
         "listing_id": "aa:120-74989",
@@ -17,10 +17,6 @@
       },
       {
         "listing_id": "aa:120-78302",
-        "reason": "diesel"
-      },
-      {
-        "listing_id": "aa:120-82676",
         "reason": "diesel"
       },
       {
@@ -32,11 +28,11 @@
         "reason": "diesel"
       },
       {
-        "listing_id": "aa:6-3440864",
+        "listing_id": "aa:6-3515956",
         "reason": "diesel"
       },
       {
-        "listing_id": "aa:73-1065614",
+        "listing_id": "aa:6-3440864",
         "reason": "diesel"
       },
       {
@@ -52,7 +48,7 @@
         "reason": "diesel"
       },
       {
-        "listing_id": "aa:6-3111324",
+        "listing_id": "aa:6-3513526",
         "reason": "diesel"
       },
       {
@@ -77,22 +73,22 @@
         "source": "aa_browse",
         "url": "https://www.theaa.com/used-vans/electric",
         "status": "ok",
-        "cards": 10,
-        "stage1_passed": 0
+        "cards": 11,
+        "stage1_passed": 1
       },
       {
         "source": "aa_browse",
         "url": "https://www.theaa.com/used-vans/bodystyle/high-roof-vans",
         "status": "ok",
-        "cards": 12,
-        "stage1_passed": 2
+        "cards": 10,
+        "stage1_passed": 0
       },
       {
         "source": "aa_browse",
         "url": "https://www.theaa.com/used-vans/large-vans",
         "status": "ok",
-        "cards": 8,
-        "stage1_passed": 4
+        "cards": 6,
+        "stage1_passed": 2
       },
       {
         "source": "aa_browse",
@@ -120,7 +116,7 @@
         "url": "https://www.theaa.com/used-vans/fiat/ducato",
         "status": "ok",
         "cards": 9,
-        "stage1_passed": 0
+        "stage1_passed": 1
       },
       {
         "source": "aa_browse",
@@ -134,7 +130,7 @@
         "url": "https://www.theaa.com/used-vans/mercedes/sprinter",
         "status": "ok",
         "cards": 18,
-        "stage1_passed": 6
+        "stage1_passed": 5
       }
     ]
   },
@@ -154,9 +150,9 @@
       "battery_kwh": 68.0,
       "year": 2022,
       "mileage": 4137,
-      "price_listed": 18325,
+      "price_listed": 18000,
       "price_plus_vat": true,
-      "price_inc_vat": 21990,
+      "price_inc_vat": 21600,
       "price_band": "preferred",
       "dealer": "Lookers Ford Transit Centre Colchester",
       "registration": "VO72UCB",
@@ -166,40 +162,12 @@
         "small battery (68kWh) - roughly 100 real miles, expect a charging stop on longer trips",
         "very low mileage for age (4,137 mi in ~4 yrs) - check MOT history"
       ],
-      "scraped_at_utc": "2026-10-19T10:10:01Z",
+      "scraped_at_utc": "2026-10-26T10:24:45Z",
       "note": "Ford E-Transit 390 L3 H2 68kWh, 2022, ~4.1k miles, £19,350+VAT, Lookers Colchester. Cheapest large high-roof EV seen so far. Transit is narrow: crosswise bed unlikely. Check MOT history for mileage.",
       "status": "live"
     }
   ],
   "vans": [
-    {
-      "listing_id": "aa:92-230131",
-      "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/92-230131",
-      "title": "Vauxhall Movano 205kW 110kWh H2 Van Prime Auto",
-      "starred": false,
-      "sold": false,
-      "platform": "stellantis:movano",
-      "tier": "tier1",
-      "fuel": "electric",
-      "roof": 2,
-      "wheelbase": 3,
-      "battery_kwh": 110.0,
-      "year": 2025,
-      "mileage": 10250,
-      "price_listed": 29988,
-      "price_plus_vat": false,
-      "price_inc_vat": 29988,
-      "price_band": "stretch",
-      "dealer": "Perrys Doncaster Vauxhall",
-      "registration": "BP74MVC",
-      "rejected_reason": null,
-      "score": 77,
-      "flags": [
-        "stretch price (£29,988 inc VAT)"
-      ],
-      "scraped_at_utc": "2026-10-19T10:09:17Z"
-    },
     {
       "listing_id": "aa:35-360935",
       "source": "aa",
@@ -226,61 +194,35 @@
       "flags": [
         "over ceiling (£34,553 inc VAT)"
       ],
-      "scraped_at_utc": "2026-10-19T10:09:45Z"
+      "scraped_at_utc": "2026-10-26T10:24:28Z"
     },
     {
-      "listing_id": "aa:120-82607",
+      "listing_id": "aa:59-1821220",
       "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/120-82607",
-      "title": "Maxus Deliver 9 88.5kWh [SOLD MT] AUTO L3 L3H3 H3 EURO 6",
+      "url": "https://www.theaa.com/used-vans/cardetails/59-1821220",
+      "title": "MAXUS EDELIVER 9 72kWh Panel Van 5dr Electric Auto FWD L3 H2 (204 ps) 7 Seater Cr",
       "starred": false,
       "sold": false,
       "platform": "maxus:edeliver9",
       "tier": "tier2",
       "fuel": "electric",
-      "roof": 3,
+      "roof": 2,
       "wheelbase": 3,
-      "battery_kwh": 88.5,
-      "year": 2024,
-      "mileage": 20564,
-      "price_listed": 21994,
-      "price_plus_vat": false,
-      "price_inc_vat": 21994,
-      "price_band": "preferred",
-      "dealer": "Anchor Group",
-      "registration": null,
-      "rejected_reason": null,
-      "score": 65,
-      "flags": [],
-      "scraped_at_utc": "2026-10-19T10:09:24Z"
-    },
-    {
-      "listing_id": "aa:50-74694",
-      "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/50-74694",
-      "title": "MAXUS DELIVER 9  150kW High Roof Van 88.5kWh Auto",
-      "starred": false,
-      "sold": false,
-      "platform": "maxus:edeliver9",
-      "tier": "tier2",
-      "fuel": "electric",
-      "roof": 3,
-      "wheelbase": 3,
-      "battery_kwh": 88.5,
-      "year": 2021,
-      "mileage": 55827,
-      "price_listed": 38890,
+      "battery_kwh": 72.0,
+      "year": 2023,
+      "mileage": 39400,
+      "price_listed": 15997,
       "price_plus_vat": true,
-      "price_inc_vat": 46668,
-      "price_band": "over_ceiling",
-      "dealer": "Sandicliffe Ford Loughborough",
-      "registration": "FE23UCN",
+      "price_inc_vat": 19196,
+      "price_band": "preferred",
+      "dealer": "Amin Motors Ltd",
+      "registration": "SA72ZGP",
       "rejected_reason": null,
-      "score": 45,
+      "score": 47,
       "flags": [
-        "over ceiling (£46,668 inc VAT)"
+        "small battery (72kWh) - roughly 100 real miles, expect a charging stop on longer trips"
       ],
-      "scraped_at_utc": "2026-10-19T10:09:15Z"
+      "scraped_at_utc": "2026-10-26T10:24:05Z"
     },
     {
       "listing_id": "aa:6-3370584",
@@ -311,7 +253,7 @@
         "battery size unknown - older vans may have small packs",
         "over ceiling (£139,989 inc VAT)"
       ],
-      "scraped_at_utc": "2026-10-19T10:09:47Z"
+      "scraped_at_utc": "2026-10-26T10:24:33Z"
     }
   ]
 }
