@@ -1,16 +1,20 @@
 {
   "run_metadata": {
-    "run_started_utc": "2026-11-16T13:02:31Z",
-    "run_finished_utc": "2026-11-16T13:03:31Z",
+    "run_started_utc": "2026-11-23T15:10:06Z",
+    "run_finished_utc": "2026-11-23T15:11:18Z",
     "scraper_version": "0.1.0",
     "budget_inc_vat": {
       "preferred": 25000,
       "ceiling": 32000
     },
     "coverage_note": "AA browse pages show a sample only; the full AA search is disallowed by robots.txt. Not exhaustive.",
-    "cards_seen": 116,
-    "stage1_candidates": 16,
+    "cards_seen": 125,
+    "stage1_candidates": 22,
     "detail_rejected": [
+      {
+        "listing_id": "aa:92-241461",
+        "reason": "diesel"
+      },
       {
         "listing_id": "aa:14-3585982",
         "reason": "diesel"
@@ -28,7 +32,15 @@
         "reason": "diesel"
       },
       {
-        "listing_id": "aa:59-1826525",
+        "listing_id": "aa:6-3546658",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:6-3546335",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:6-3544994",
         "reason": "diesel"
       },
       {
@@ -36,11 +48,11 @@
         "reason": "diesel"
       },
       {
-        "listing_id": "aa:59-1859904",
+        "listing_id": "aa:6-3515956",
         "reason": "diesel"
       },
       {
-        "listing_id": "aa:73-1091658",
+        "listing_id": "aa:59-1859904",
         "reason": "diesel"
       },
       {
@@ -52,7 +64,11 @@
         "reason": "diesel"
       },
       {
-        "listing_id": "aa:6-3532820",
+        "listing_id": "aa:6-3542560",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:120-85344",
         "reason": "diesel"
       },
       {
@@ -61,6 +77,10 @@
       },
       {
         "listing_id": "aa:14-3563805",
+        "reason": "diesel"
+      },
+      {
+        "listing_id": "aa:14-3616818",
         "reason": "diesel"
       },
       {
@@ -73,15 +93,15 @@
         "source": "aa_browse",
         "url": "https://www.theaa.com/used-vans/electric",
         "status": "ok",
-        "cards": 11,
-        "stage1_passed": 0
+        "cards": 13,
+        "stage1_passed": 1
       },
       {
         "source": "aa_browse",
         "url": "https://www.theaa.com/used-vans/bodystyle/high-roof-vans",
         "status": "ok",
-        "cards": 10,
-        "stage1_passed": 1
+        "cards": 14,
+        "stage1_passed": 2
       },
       {
         "source": "aa_browse",
@@ -101,7 +121,7 @@
         "source": "aa_browse",
         "url": "https://www.theaa.com/used-vans/citroen/relay",
         "status": "ok",
-        "cards": 15,
+        "cards": 18,
         "stage1_passed": 0
       },
       {
@@ -109,14 +129,14 @@
         "url": "https://www.theaa.com/used-vans/vauxhall/movano",
         "status": "ok",
         "cards": 15,
-        "stage1_passed": 7
+        "stage1_passed": 9
       },
       {
         "source": "aa_browse",
         "url": "https://www.theaa.com/used-vans/fiat/ducato",
         "status": "ok",
         "cards": 9,
-        "stage1_passed": 1
+        "stage1_passed": 2
       },
       {
         "source": "aa_browse",
@@ -130,7 +150,7 @@
         "url": "https://www.theaa.com/used-vans/mercedes/sprinter",
         "status": "ok",
         "cards": 18,
-        "stage1_passed": 4
+        "stage1_passed": 5
       }
     ]
   },
@@ -148,7 +168,7 @@
       "listing_id": "aa:35-360935",
       "source": "aa",
       "url": "https://www.theaa.com/used-vans/cardetails/35-360935",
-      "title": "Vauxhall Movano Electric 3500 HD 110kWh Prime Panel Van 5dr Electric Auto L3 H2 (11kW Cha",
+      "title": "Vauxhall Movano 3500 HD 110kWh Prime Panel Van 5dr Electric Auto L3 H2 (11kW Cha",
       "starred": false,
       "sold": false,
       "platform": "stellantis:movano",
@@ -170,38 +190,65 @@
       "flags": [
         "stretch price (£28,794 inc VAT)"
       ],
-      "scraped_at_utc": "2026-11-16T13:03:17Z"
+      "scraped_at_utc": "2026-11-23T15:11:00Z"
     },
     {
-      "listing_id": "aa:6-3370584",
+      "listing_id": "aa:6-3524875",
       "source": "aa",
-      "url": "https://www.theaa.com/used-vans/cardetails/6-3370584",
-      "title": "Mercedes-Benz Sprinter Silk Jet VIP Luxury Conversion",
+      "url": "https://www.theaa.com/used-vans/cardetails/6-3524875",
+      "title": "Ford E-Transit 350 68kWh Leader Panel Van 5dr Electric Auto RWD L2 H2 (184 ps)",
       "starred": false,
       "sold": false,
-      "platform": "mercedes:sprinter",
+      "platform": "ford:transit",
       "tier": "tier2",
-      "fuel": null,
-      "roof": null,
-      "wheelbase": null,
-      "battery_kwh": null,
-      "year": 2025,
-      "mileage": 1500,
-      "price_listed": 139989,
-      "price_plus_vat": false,
-      "price_inc_vat": 139989,
-      "price_band": "over_ceiling",
-      "dealer": "Blackstone Motors Limited",
-      "registration": "CN25OVM",
+      "fuel": "electric",
+      "roof": 2,
+      "wheelbase": 2,
+      "battery_kwh": 68.0,
+      "year": 2023,
+      "mileage": 19720,
+      "price_listed": 16995,
+      "price_plus_vat": true,
+      "price_inc_vat": 20394,
+      "price_band": "preferred",
+      "dealer": "V12 Sports and Classics",
+      "registration": "HK73NPC",
       "rejected_reason": null,
-      "score": 20,
+      "score": 42,
       "flags": [
-        "fuel not stated in title",
-        "roof not stated - check",
-        "battery size unknown - older vans may have small packs",
-        "over ceiling (£139,989 inc VAT)"
+        "small battery (68kWh) - roughly 100 real miles, expect a charging stop on longer trips"
       ],
-      "scraped_at_utc": "2026-11-16T13:03:22Z"
+      "scraped_at_utc": "2026-11-23T15:10:29Z"
+    },
+    {
+      "listing_id": "aa:6-3540900",
+      "source": "aa",
+      "url": "https://www.theaa.com/used-vans/cardetails/6-3540900",
+      "title": "Fiat Ducato 35 47kWh eTecnico Auto L H2 N/A 5dr (11kW Charger)",
+      "starred": false,
+      "sold": false,
+      "platform": "stellantis:ducato",
+      "tier": "tier1",
+      "fuel": "electric",
+      "roof": 2,
+      "wheelbase": null,
+      "battery_kwh": 47.0,
+      "year": 2021,
+      "mileage": 9474,
+      "price_listed": 29995,
+      "price_plus_vat": true,
+      "price_inc_vat": 35994,
+      "price_band": "over_ceiling",
+      "dealer": "Thames Group Fiat Professional Slough",
+      "registration": "RA21KRJ",
+      "rejected_reason": null,
+      "score": 42,
+      "flags": [
+        "small battery (47kWh) - roughly 100 real miles, expect a charging stop on longer trips",
+        "over ceiling (£35,994 inc VAT)",
+        "very low mileage for age (9,474 mi in ~5 yrs) - check MOT history"
+      ],
+      "scraped_at_utc": "2026-11-23T15:11:05Z"
     }
   ]
 }
